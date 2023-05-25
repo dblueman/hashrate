@@ -20,7 +20,7 @@ var (
    cleanupInterval = time.Minute * 15
 )
 
-func New[T comparable](limit float32, rate float32) *Hashtbucket[T] {
+func New[T comparable](limit, rate float32) *Hashtbucket[T] {
    return &Hashtbucket[T]{
       limit:       limit,
       rate:        rate,
